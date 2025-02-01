@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME BUILDER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> SHAREABLE RESUME BUILDER!</h1>
+    <div class="resume-container">
+        <form id="resume-form">
+            <div class="profile-section">
+                <label for="photo">Upload Profile Picture:</label>
+                <input type="file" id="photo" accept="image/*" placeholder="image" required>
+            </div>
+    
+            <fieldset>
+                <legend><h2>Personal Information:</h2></legend>
+                <label for="username">userName: </label>
+                <input type="text" id="userName" placeholder="username" required><br>
+                <label for="name">Name: </label>
+                <input type="text" id="name" placeholder="Name" required><br>
+                <label for="FatherName">FatherName:</label>
+                <input type="text" id="FatherName" placeholder="FatherName" required><br>
+                <hr>
+                <h3>Contact Details:</h3>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Email" required><br>
+                <label for="number">Phone number:</label>
+                <input type="number" id="number" placeholder="Number" required><br>
+            </fieldset>
+
+            <fieldset>
+                <legend><h2>Education:</h2></legend>
+                <label for="Qualification">Qualification:</label>
+                <input type="text" id="Qualification" placeholder="Qualification" required>
+            </fieldset>
+
+            <fieldset>
+                <legend><h2>Skills:</h2></legend>
+                <label for="skill">Skill:</label>
+                <input type="text" id="skill" placeholder="Skill"><br>
+                <hr>
+                <label for="certifications">Certifications:</label>
+                <input type="text" id="certifications" placeholder="Certificates" required>
+                <hr>
+            </fieldset>
+
+            <fieldset>
+                <legend><h2>Work Experiences:</h2></legend>
+                <label for="experience">Experiences:</label>
+                <textarea id="experience" rows="4" placeholder="Experience"></textarea><br>
+                <hr>
+                <label for="workplace">Work place:</label>
+                <textarea id="workplace" rows="2" placeholder="Work place"></textarea><br>
+                <hr>
+            </fieldset>
+            <hr>
+            <button type="submit"><h3>Generate resume!</h3></button>
+        </form>
+        <br>
+    
+        <div id="resume-display" contenteditable="true"></div>
+    </div>
+    <br>
+    <!-- shareable link -->
+     <div id="shareable-link-container" style="display: none;">
+        <h1>Shareable Link</h1>
+        <p>You can edit and share your resume from this link:</p>
+        <a href="#" id="shareable-link" target="_blank"></a>
+        <br>
+        <button id="download">Download</button>
+     </div>
+    <script src="main.js"></script>
+</body>
+</html>

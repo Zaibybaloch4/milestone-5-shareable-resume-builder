@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.resume-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f7f0f0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    background-color: #45a049;
+    color: white;
+    text-decoration: dashed;
+    font-weight: 400;
+    border: 100px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid rgb(153, 147, 147);
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.resume-display{
+    outline: none;
+    
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 30% 1fr;
+    }
+}
